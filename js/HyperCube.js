@@ -35,7 +35,7 @@ class HyperCube {
         this.saturation = 100;
         this.brightness = 100;
         // 大小
-        this.scale = 100;
+        this.scale = 150;
         // 三维角度（描述姿态）
         this.angleX = PI / 3;
         this.angleY = 0;
