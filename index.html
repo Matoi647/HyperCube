@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="js/HyperCube.js"></script>
+    <title>Hyper Cube</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            position: relative;
+            bottom: 1px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #000;
+        }
+
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle, #d7dde8, #757f9a);
+        }
+
+        .slider-container {
+            margin: 0px;
+            padding: 0px 15px 0px 0px;
+            width: 195px;
+            height: 140px;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: end;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-container:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        input[type="range"] {
+            width: 120px;
+            height: 15px;
+            appearance: none;
+            background: #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb{
+            width: 15px;
+            height: 15px;
+            appearance: none;
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 8px;
+            box-shadow: -108px 0 0 100px #757f9a;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas-container"> </div>
+
+    <div class="slider-container">
+        <div class="slider-group">
+            <span>速度</span>
+            <input type="range" class="range" min="0" max="10" value="1" step="0.1" id="velocitySlider">
+        </div>
+        <div class="slider-group">
+            <span>色相</span>
+            <input type="range" class="range" min="0" max="360" value="0" step="1" id="hueSlider">
+        </div>
+        <div class="slider-group">
+            <span>饱和度</span>
+            <input type="range" class="range" min="0" max="100" value="0" step="1" id="saturationSlider">
+        </div>
+        <div class="slider-group">
+            <span>亮度</span>
+            <input type="range" class="range" min="0" max="100" value="0" step="1" id="brightnessSlider">
+        </div>
+    </div>
+
+</body>
+
+</html>
