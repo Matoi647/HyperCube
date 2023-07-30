@@ -16,10 +16,11 @@
 
         span {
             position: relative;
-            bottom: 1px;
+            bottom: 2px;
             text-align: center;
             font-family:'Times New Roman', Times, serif;
             font-weight: bold;
+            font-size: large;
             color: #000;
         }
 
@@ -31,9 +32,9 @@
 
         .slider-container {
             margin: 0px;
-            padding: 0px 15px 0px 0px;
-            width: 195px;
-            height: 140px;
+            padding: 0px 20px 0px 0px;
+            width: 300px;
+            height: 200px;
             position: absolute;
             top: 5%;
             right: 5%;
@@ -41,7 +42,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: end;
-            gap: 10px;
+            gap: 15px;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 5px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -52,23 +53,23 @@
         }
 
         input[type="range"] {
-            width: 120px;
-            height: 15px;
+            width: 150px;
+            height: 20px;
             appearance: none;
             background: #ddd;
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
             cursor: pointer;
         }
         
         input[type="range"]::-webkit-slider-thumb{
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
             appearance: none;
             background: #fff;
             border: 2px solid #000;
-            border-radius: 8px;
-            box-shadow: -108px 0 0 100px #757f9a;
+            border-radius: 10px;
+            box-shadow: -160px 0 0 150px #757f9a;
         }
     </style>
 </head>
