@@ -31,7 +31,7 @@ class HyperCube {
             new Vector4D(-1, 1, 1, -1),
         ];
         // 颜色
-        this.hue = 90;
+        this.hue = 0;
         this.saturation = 100;
         this.brightness = 100;
         // 大小
@@ -101,7 +101,7 @@ class HyperCube {
             // point(vertices3D[i].x, vertices3D[i].y, vertices3D[i].z);
         }
 
-        strokeWeight(2);
+        strokeWeight(4);
         beginShape(LINES);
 
         for (let i = 0; i < 4; i++) {
