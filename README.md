@@ -1,6 +1,6 @@
 # HyperCube
 
-四维超立方体网页
+HyperCube Website
 
 https://matoi647.github.io/HyperCube/
 
